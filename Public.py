@@ -133,7 +133,7 @@ def back():
 def banner():
 	clear()
 	sol()
-	ban=''' Â© MASTER MIND JOKER MAFI'A
+	ban='''  MASTER MIND ABIR
   /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$ 
  /$$__  $$| $$__  $$|_  $$_/| $$__  $$
 | $$  \ $$| $$  \ $$  | $$  | $$  \ $$
@@ -167,9 +167,9 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t             WELLCOME : [green]ENJOY PUBLIC TOOL[purple] '))
+		cetak(nel('\t             WELLCOME : [green]ENJOY FREE PUBLIC TOOL[purple] '))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}â€¢{u}] INPUT COOKIES :{asu} ')
+		cookie=input(f'  COOKIES :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 9; XIAOMI Mi Note 10 Pro Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.15.0","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
