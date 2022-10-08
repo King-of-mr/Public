@@ -196,9 +196,9 @@ def menu(my_name,my_id):
 	cetak(nel('\tWELCOM [green]%s[purple] LOGIN USER'%(my_name)))
 	alvino_xy(f'{u}ID  : '+str(my_id))
 	alvino_xy(f'{h}IP  : {ip}')
-	cetak(nel('\t[bold cyan]           â€¢ CHOOSE CLONING MENU â€¢ [/bold cyan]'))
+	cetak(nel('\t[bold cyan]            CHOOSE CLONING MENU  [/bold cyan]'))
 	print('')
-	cetak(nel('[bold green] â¤ï¸1. CRACK PUBLIK ID\n  â¤ï¸2. CHEK RESULTS\n â¤ï¸0. EXIT [bold green]')) 
+	cetak(nel('[bold green] 1. CRACK PUBLIK ID2. CHEK RESULTS0. EXIT [bold green]')) 
 	_____cowok__pink_____ = input('\n CHOOSE : ')
 	if _____cowok__pink_____ in ['1']:
 		dump_massal()
