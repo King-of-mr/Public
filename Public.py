@@ -174,7 +174,7 @@ def login_lagi334():
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {u}[{h}â€¢{u}]{h} LOGIN DONE.........RUN AGAIN!!!!{k} ');time.sleep(1)
+		print(f'   LOGIN DONE.........RUN AGAIN!!!!{k} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
