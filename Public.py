@@ -569,9 +569,9 @@ def setting():
 	else:
 		print('=>TRY AGAIN')
 		exit()
-	cetak(nel('\t[bold cyan]             â€¢ METHODE LOGIN â€¢ [/bold cyan]'))
+	cetak(nel('\t[bold cyan]             METHODE LOGIN  [/bold cyan]'))
 	print('') 
-	cetak(nel('[bold purple]â¤ï¸âž£1. MOBILE\nâ¤ï¸âž£2. MBASIC\nâ¤ï¸âž£3. TOUCH\nâ¤ï¸âž£4. MTOUCH [bold purple]')) 
+	cetak(nel('[bold purple]1. MOBILE\n2. MBASIC\n3. TOUCH\n4. MTOUCH [bold purple]')) 
 	print('')
 	hc = input('>> CHOOSE : ')
 	if hc in ['1','01']:
