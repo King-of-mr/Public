@@ -608,8 +608,8 @@ def setting():
 	exit() 
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	cetak(nel('[bold cyan]               WAIT FOR A WHILE ðŸ˜‚[bold cyan]')) 
-	print(f'                    {m}H {k}A {h}R {u}A {b}P {u}  â˜…  {b}S {u}A {h} B{k} A{m} R{b}')
+	cetak(nel('[bold cyan]               WAIT FOR A WHILE [bold cyan]')) 
+	print(f'                    {m}H {k}A {h}P {u}P {b}Y {u}    {b}C {u}L {h} O{k} N{m} E{b}')
 	print('')
 	print(f'=>RESULTS {h}OK{u} CHEK : {h}OK/%s {b}'%(okc))
 	print(f'=>RESULTS {k}CP{h} CHEK : {k}CP/%s {b}'%(cpc))
